@@ -233,7 +233,7 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route
-        path="/shop"
+        path="/shop/"
         element={
           <RootLayout
             cartItems={cartItems}
@@ -244,7 +244,7 @@ const App = () => {
         }
       >
         <Route
-          path="/shop"
+          path="/shop/"
           element={<Home handleFilterCategory={handleFilterCategory} />}
         />
 
