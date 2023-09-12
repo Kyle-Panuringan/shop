@@ -222,7 +222,7 @@ export const Navbar = ({
   // Buttons - L Screen
   const buttonsLScreen = (
     <Box sx={{ display: "flex" }}>
-      <Button color="secondary" component={Link} to="/shop">
+      <Button color="secondary" component={Link} to="/">
         Home
       </Button>
       <Button color="secondary" component={Link} to="store">

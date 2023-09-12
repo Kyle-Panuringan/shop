@@ -1,7 +1,7 @@
 import {
   Route,
   RouterProvider,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
@@ -230,10 +230,10 @@ const App = () => {
     getStoreItems();
   }, []);
   // Router
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route
-        path="/shop/"
+        path="/"
         element={
           <RootLayout
             cartItems={cartItems}
@@ -244,7 +244,7 @@ const App = () => {
         }
       >
         <Route
-          path="/shop/"
+          index
           element={<Home handleFilterCategory={handleFilterCategory} />}
         />
 
