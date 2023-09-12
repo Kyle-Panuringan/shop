@@ -4,7 +4,6 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { RootLayout } from "./layout/RootLayout";
 import { ThemeProvider } from "@mui/material";
 import Home from "./components/Home";
 import { theme } from "./theme";
@@ -15,6 +14,7 @@ import { NotFound } from "./components/NotFound";
 import { useEffect, useState } from "react";
 import { About } from "./components/About";
 import axios from "axios";
+import { RootLayout } from "./layout/RootLayout";
 
 export interface CartItem {
   details: Store;
