@@ -4,7 +4,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import { RootLayout } from "./layout/RootLayout.1";
-import { Home } from "./components/Home";
+import Home from "./components/Home";
 import { StoreLayout } from "./layout/StoreLayout";
 import { Store } from "@mui/icons-material";
 
